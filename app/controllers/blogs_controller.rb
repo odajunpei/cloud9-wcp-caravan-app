@@ -8,7 +8,7 @@ class BlogsController < ApplicationController
   end
 
   def new
-    @blog = Blog.new
+    @blog = Blog.find(params[:id])
   end
 
   def create
